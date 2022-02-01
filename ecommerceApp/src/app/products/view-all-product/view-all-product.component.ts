@@ -17,6 +17,7 @@ export class ViewAllProductComponent implements OnInit {
 
     this.productService.viewProduct().subscribe(data=>{
       this.productList=data;
+      console.log(data);
     })
   }
 
